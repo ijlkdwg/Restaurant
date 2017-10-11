@@ -18,6 +18,8 @@
     <pdf-app.version>1.8.6</pdf-app.version>
     <pdf.version>1.8.2</pdf.version>
     <poi.version>3.17</poi.version>
+    <shiro.version>1.4.0</shiro.version>
+    <memcached.version>3.0.2</memcached.version>
   </properties>
   <dependencies>
     <dependency>
@@ -166,6 +168,49 @@
       <version>${poi.version}</version>
     </dependency>
     <!--poi jar end-->
+    <!--shiro jar start-->
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-web</artifactId>
+      <version>${shiro.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-core</artifactId>
+      <version>${shiro.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-cache</artifactId>
+      <version>${shiro.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-spring</artifactId>
+      <version>${shiro.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-CAS</artifactId>
+      <version>${shiro.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-quartz</artifactId>
+      <version>${shiro.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-spring-boot-web-starter</artifactId>
+      <version>${shiro.version}</version>
+    </dependency>
+    <!--shiro jar end-->
+    <!--memcached jar start-->
+    <dependency>
+      <groupId>com.whalin</groupId>
+      <artifactId>Memcached-Java-Client</artifactId>
+      <version>${memcached.version}</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>Restaurant</finalName>
