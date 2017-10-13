@@ -191,7 +191,7 @@
     </dependency>
     <dependency>
       <groupId>org.apache.shiro</groupId>
-      <artifactId>shiro-CAS</artifactId>
+      <artifactId>shiro-cas</artifactId>
       <version>${shiro.version}</version>
     </dependency>
     <dependency>
