@@ -20,6 +20,8 @@
     <poi.version>3.17</poi.version>
     <shiro.version>1.4.0</shiro.version>
     <memcached.version>3.0.2</memcached.version>
+    <activiti.version>6.0.0</activiti.version>
+    <jedis.version>2.9.0</jedis.version>
   </properties>
   <dependencies>
     <dependency>
@@ -211,6 +213,39 @@
       <artifactId>Memcached-Java-Client</artifactId>
       <version>${memcached.version}</version>
     </dependency>
+    <dependency>
+      <groupId>redis.clients</groupId>
+      <artifactId>jedis</artifactId>
+      <version>${jedis.version}</version>
+    </dependency>
+
+    <!--servlet jar start-->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>4.0.0</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.el</groupId>
+      <artifactId>javax.el-api</artifactId>
+      <version>3.0.1-b04</version>
+    </dependency>
+    <!--servlet jar end-->
+    <!--activiti jar start -->
+    <dependency>
+      <groupId>org.activiti</groupId>
+      <artifactId>activiti-engine</artifactId>
+      <version>${activiti.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.activiti</groupId>
+      <artifactId>activiti-spring</artifactId>
+      <version>${activiti.version}</version>
+    </dependency>
+
+    <!--activiti jar end -->
   </dependencies>
   <build>
     <finalName>Restaurant</finalName>
